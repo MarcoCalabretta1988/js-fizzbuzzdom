@@ -48,7 +48,7 @@ Come abbiamo visto puoi  usare varie tecniche (style , className, classList)
 // !BONUS 1
 
 const board = document.getElementById('board');
-let messageElement = '<ul>';
+let messageElement = '';
 
 //1- Creare un ciclo che va da 1 a 100;
 
@@ -69,14 +69,15 @@ for(let i = 1 ; i <= 100 ; i++){
 
     if ((i % 3) === 0 && (i % 5) === 0){
         message = 'FizzBuzz';
+    
     }
     
     //! BONUS 1
 
-    messageElement += `<li> ${message} </li>`;
+    messageElement += `<div class=grid-item> ${message} </div>`;
     //5- Stampare in console;
     console.log(message);
 }
-messageElement += '</ul>';
+
 board.innerHTML = messageElement;
 
