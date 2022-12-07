@@ -45,6 +45,10 @@ Come abbiamo visto puoi  usare varie tecniche (style , className, classList)
 5- Stampare in console;
 */
 
+// !BONUS 1
+
+const board = document.getElementById('board');
+let messageElement = '<ul>';
 
 //1- Creare un ciclo che va da 1 a 100;
 
@@ -67,6 +71,12 @@ for(let i = 1 ; i <= 100 ; i++){
         message = 'FizzBuzz';
     }
     
+    //! BONUS 1
+
+    messageElement += `<li> ${message} </li>`;
     //5- Stampare in console;
     console.log(message);
 }
+messageElement += '</ul>';
+board.innerHTML = messageElement;
+
