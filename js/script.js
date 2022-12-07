@@ -56,27 +56,35 @@ for(let i = 1 ; i <= 100 ; i++){
 
     //2- Creare una variabile da stampare in console;
     let message = i;
+    let bgColor = 'grid-item';
     
     //3- Effettuare controlli se divisibile per 3,5,3 e 5;
-    if ( (i % 3) === 0){
+    if ((i % 3) === 0 && (i % 5) === 0){
+        message = 'FizzBuzz';
+        bgColor = 'grid-item-red';
+    
+    }
+    else if ( (i % 3) === 0){
         //4- Variare il valore della variabile a seconda dei controlli;
         message = 'Fizz';
+        bgColor = 'grid-item-yellow';
     }
     else if( (i % 5) === 0){
         //4- Variare il valore della variabile a seconda dei controlli;
         message = 'Buzz';
+        bgColor = 'grid-item-green';
     }
-
-    if ((i % 3) === 0 && (i % 5) === 0){
-        message = 'FizzBuzz';
-    
+    else{
+    //2- Creare una variabile da stampare in console;
+    let message = i;
+    let bgColor = 'grid-item';
     }
     
     //! BONUS 1
 
-    messageElement += `<div class=grid-item> ${message} </div>`;
+    messageElement += `<div class= ${bgColor}>` + `${message}  </div>`;
     //5- Stampare in console;
-    console.log(message);
+    console.log(messageElement);
 }
 
 board.innerHTML = messageElement;
