@@ -82,9 +82,9 @@ for(let i = 1 ; i <= 100 ; i++){
     
     //! BONUS 1
 
+    //5- Stampare a video;
     messageElement += `<div class= ${bgColor}>` + `${message}  </div>`;
-    //5- Stampare in console;
-    console.log(messageElement);
+    
 }
 
 board.innerHTML = messageElement;
