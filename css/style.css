@@ -12,15 +12,15 @@ body{
     font-family: sans-serif;
 }
 
-.bg-yellow{
+#board .bg-yellow{
     background-color: #FFD166;
 }
 
-.bg-green{
+#board .bg-green{
     background-color: #0CD6A1;
 }
 
-.bg-red{
+#board .bg-red{
     background-color: #F0466F;
 }
 
@@ -70,41 +70,4 @@ body{
    text-align: center;
  }
 
-  .grid-item-red {
-     background-color: #F0466F;
-    border: 2px solid rgba(0, 0, 0, 0.8);
-    border-radius: 20px;
-    height: 100px;
-    width: 100px;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 100px;
-    vertical-align: middle;
-    text-align: center;
-  }
-
-  .grid-item-green {
-    background-color: #0CD6A1;
-   border: 2px solid rgba(0, 0, 0, 0.8);
-   border-radius: 20px;
-   height: 100px;
-   width: 100px;
-   font-size: 20px;
-   font-weight: bold;
-   line-height: 100px;
-   vertical-align: middle;
-   text-align: center;
- }
-
- .grid-item-yellow {
-    background-color: #FFD166;
-   border: 2px solid rgba(0, 0, 0, 0.8);
-   border-radius: 20px;
-   height: 100px;
-   width: 100px;
-   font-size: 20px;
-   font-weight: bold;
-   line-height: 100px;
-   vertical-align: middle;
-   text-align: center;
- }
+  
